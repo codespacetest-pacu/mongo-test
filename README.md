@@ -1,6 +1,14 @@
 # IMPORTANT:
-## How to add an existing dev container config to your Codespace:
-* Use ```Dev Containers: Add Dev Container Configuration Files...``` at the command palette
+
+## How to recreate this dev environmnet from scratch:
+* Create a repository with just a README.md
+* Open that repository in Codespaces
+* At the command palette: 
+  * ```Dev Containers: Add Dev Container Configuration Files...```
+	* ```Create a new configuration```
+	* ```mongo```
+
+## Documentation
 * [Instructions](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container)
 * [More instructions](https://github.com/devcontainers/templates/issues/113#issuecomment-1406905679)
 * Further [documentation on devcontainer.json](https://containers.dev/supporting)
