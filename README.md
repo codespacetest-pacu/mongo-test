@@ -11,6 +11,8 @@
   * [Instructions](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container)
   * [More instructions](https://github.com/devcontainers/templates/issues/113#issuecomment-1406905679)
   * Further [documentation on devcontainer.json](https://containers.dev/supporting)
+* At the command line, you can use ```mongosh```
+* You can also use the [MongoDB for VSCode extension](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode) (pre-installed) to connec to Mongo.
 
 # Node.js & Mongo DB (javascript-node-mongo)
 
