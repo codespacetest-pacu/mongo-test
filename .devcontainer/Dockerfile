@@ -1,18 +1,5 @@
-FROM mcr.microsoft.com/devcontainers/cpp:0-debian-11
+FROM mcr.microsoft.com/devcontainers/javascript-node:0-${templateOption:imageVariant}
 
-ARG REINSTALL_CMAKE_VERSION_FROM_SOURCE="none"
-
-# Optionally install the cmake for vcpkg
-COPY ./reinstall-cmake.sh /tmp/
-
-RUN if [ "${REINSTALL_CMAKE_VERSION_FROM_SOURCE}" != "none" ]; then \
-        chmod +x /tmp/reinstall-cmake.sh && /tmp/reinstall-cmake.sh ${REINSTALL_CMAKE_VERSION_FROM_SOURCE}; \
-    fi \
-    && rm -f /tmp/reinstall-cmake.sh
-
-# [Optional] Uncomment this section to install additional vcpkg ports.
-# RUN su vscode -c "${VCPKG_ROOT}/vcpkg install <your-port-name-here>"
-    
 # Install MongoDB command line tools - though mongo-database-tools not available on arm64
 ARG MONGO_TOOLS_VERSION=6.0
 RUN . /etc/os-release \
@@ -22,6 +9,17 @@ RUN . /etc/os-release \
     && apt-get install -y mongodb-mongosh \
     && if [ "$(dpkg --print-architecture)" = "amd64" ]; then apt-get install -y mongodb-database-tools; fi \
     && apt-get clean -y && rm -rf /var/lib/apt/lists/*
-    && apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends enscript ghostscript poppler-utils ltrace lshw screen
-    
+
+# [Optional] Uncomment this section to install additional OS packages.
+# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+#     && apt-get -y install --no-install-recommends <your-package-list-here>
+
+# [Optional] Uncomment if you want to install an additional version of node using nvm
+# ARG EXTRA_NODE_VERSION=10
+# RUN su node -c "source /usr/local/share/nvm/nvm.sh && nvm install ${EXTRA_NODE_VERSION}"
+
+# [Optional] Uncomment if you want to install more global node modules
+# RUN su node -c "npm install -g <your-package-list-here>"
+
+
+
