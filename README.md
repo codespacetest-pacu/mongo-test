@@ -12,14 +12,17 @@
   * [More instructions](https://github.com/devcontainers/templates/issues/113#issuecomment-1406905679)
   * Further [documentation on devcontainer.json](https://containers.dev/supporting)
 * At the command line, you can use ```mongosh```
-* You can also use the [MongoDB for VSCode extension](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode) (pre-installed) to connec to Mongo.
-
----
+* You can also use the [MongoDB for VSCode extension](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode) (pre-installed) to connect to Mongo.
 
 ### Notes
 * The Mongo Database is available at ```mongodb://localhost:27017```
+* You can [forward](https://docs.github.com/en/codespaces/developing-in-codespaces/forwarding-ports-in-your-codespace) the port locally (see also forwardPorts below)
 * Data stored in Mongo is persisted when you shutdown the Codespace.
 * Data stored in Mongo is *NOT persisted* if you delete the Codespace.
+
+---
+
+---
 
 # Node.js & Mongo DB (javascript-node-mongo)
 
