@@ -14,6 +14,13 @@
 * At the command line, you can use ```mongosh```
 * You can also use the [MongoDB for VSCode extension](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode) (pre-installed) to connec to Mongo.
 
+---
+
+### Notes
+* The Mongo Database is available at ```mongodb://localhost:27017```
+* Data stored in Mongo is persisted when you shutdown the Codespace.
+* Data stored in Mongo is *NOT persisted* if you delete the Codespace.
+
 # Node.js & Mongo DB (javascript-node-mongo)
 
 Develop applications in Node.js and Mongo DB. Includes Node.js, eslint, and yarn in a container linked to a Mongo DB.
