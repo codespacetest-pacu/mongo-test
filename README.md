@@ -1,3 +1,7 @@
+# IMPORTANT:
+## How to add an existing dev container config to your Codespace:
+* Use ```Dev Containers: Add Dev Container Configuration Files...``` at the command palette
+* [Instructions](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container)
 
 # Node.js & Mongo DB (javascript-node-mongo)
 
