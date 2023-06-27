@@ -7,11 +7,10 @@
   * ```Dev Containers: Add Dev Container Configuration Files...```
 	* ```Create a new configuration```
 	* ```mongo```
-
-## Documentation
-* [Instructions](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container)
-* [More instructions](https://github.com/devcontainers/templates/issues/113#issuecomment-1406905679)
-* Further [documentation on devcontainer.json](https://containers.dev/supporting)
+* Documentation
+  * [Instructions](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container)
+  * [More instructions](https://github.com/devcontainers/templates/issues/113#issuecomment-1406905679)
+  * Further [documentation on devcontainer.json](https://containers.dev/supporting)
 
 # Node.js & Mongo DB (javascript-node-mongo)
 
