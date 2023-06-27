@@ -1,6 +1,6 @@
 # IMPORTANT:
 
-## How to recreate this dev environmnet from scratch:
+## How to recreate this dev environment from scratch:
 * Create a repository with just a README.md
 * Open that repository in Codespaces
 * At the command palette: 
